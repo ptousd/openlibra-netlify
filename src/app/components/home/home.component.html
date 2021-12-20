@@ -1,0 +1,33 @@
+<div class="requestKo" fxLayout="row" fxLayoutAlign="center">
+  <p id="booksFeedback" class="hide"></p>
+</div>
+
+<h2>{{ name }}</h2>
+
+<div class="spinner">
+  <div fxLayout="column" fxLayoutAlign="center center" *ngIf="!loaded">
+    <mat-spinner diameter="150"></mat-spinner>
+  </div>
+</div>
+
+<div
+  class="container animate__animated animate__slideInRight"
+  fxLayout="row wrap"
+  fxLayoutGap="10px"
+  fxLayoutAlign="start center"
+>
+  <mat-card
+    class="mat-elevation-z16"
+    fxLayout="column"
+    fxLayoutAlign="start center"
+    fxFlex="300px"
+    *ngFor="let book of books"
+    (click)="showDetails(book.ID)"
+  >
+    <mat-card-title>{{ book.title }}</mat-card-title>
+    <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
+    <mat-card-content>
+      <img alt="Portada {{ book.title }}" [src]="book.thumbnail" />
+    </mat-card-content>
+  </mat-card>
+</div>
