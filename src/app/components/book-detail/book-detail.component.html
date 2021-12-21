@@ -57,7 +57,7 @@
               <mat-divider></mat-divider>
             </mat-list>
             <p>
-              <a [href]="book.url_download" target="#"
+              <a [href]="book.url_download | secureUrl" target="#"
                 >Pulsa aquí para descargar el PDF</a
               >
             </p>

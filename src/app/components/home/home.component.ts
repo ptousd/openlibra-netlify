@@ -52,5 +52,9 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl('/book/' + bookId);
   }
 
+  convertUrlToHttps(url: string): string {
+    return url.replace('http://', 'https://');
+  }
+
   ngOnInit(): void {}
 }

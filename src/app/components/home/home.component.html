@@ -17,7 +17,7 @@
   fxLayoutAlign="start center"
 >
   <mat-card
-    class="mat-elevation-z16"
+    appMaterialElevation
     fxLayout="column"
     fxLayoutAlign="start center"
     fxFlex="300px"
@@ -27,7 +27,7 @@
     <mat-card-title>{{ book.title }}</mat-card-title>
     <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
     <mat-card-content>
-      <img alt="Portada {{ book.title }}" [src]="book.thumbnail" />
+      <img alt="Portada {{ book.title }}" [src]="book.thumbnail | secureUrl" />
     </mat-card-content>
   </mat-card>
 </div>

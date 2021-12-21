@@ -15,14 +15,16 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import { HomeComponent } from './components/home/home.component';
+import { MaterialElevationDirective } from './directives/material-elevation.directive';
 import { SafeHtmlPipe } from './pipes/safehtml.pipe';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { SecureUrlPipe } from './pipes/secureurl.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { environment } from '../environments/environment';
     BookDetailComponent,
     CategoryListComponent,
     SafeHtmlPipe,
+    SecureUrlPipe,
+    MaterialElevationDirective,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,7 @@ import { environment } from '../environments/environment';
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
   providers: [],
