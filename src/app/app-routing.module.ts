@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
     path: 'book/:id',
     component: BookDetailComponent,
   },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({

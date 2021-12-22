@@ -22,6 +22,7 @@ import { AppComponent } from './app.component';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { MaterialElevationDirective } from './directives/material-elevation.directive';
 import { SafeHtmlPipe } from './pipes/safehtml.pipe';
 import { SecureUrlPipe } from './pipes/secureurl.pipe';
@@ -35,6 +36,7 @@ import { SecureUrlPipe } from './pipes/secureurl.pipe';
     SafeHtmlPipe,
     SecureUrlPipe,
     MaterialElevationDirective,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
