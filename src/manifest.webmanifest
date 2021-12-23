@@ -1,6 +1,6 @@
 {
-  "name": "opnlibra-pwa",
-  "short_name": "opnlibra-pwa",
+  "name": "openlibra-pwa",
+  "short_name": "openlibra-pwa",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",

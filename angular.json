@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "opnlibra-pwa": {
+    "openlibra-pwa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "opnlibra-pwa:build:production"
+              "browserTarget": "openlibra-pwa:build:production"
             },
             "development": {
-              "browserTarget": "opnlibra-pwa:build:development"
+              "browserTarget": "openlibra-pwa:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "opnlibra-pwa:build"
+            "browserTarget": "openlibra-pwa:build"
           }
         },
         "test": {
@@ -111,5 +111,5 @@
       }
     }
   },
-  "defaultProject": "opnlibra-pwa"
+  "defaultProject": "openlibra-pwa"
 }

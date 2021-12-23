@@ -27,7 +27,12 @@
     <mat-card-title>{{ book.title }}</mat-card-title>
     <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
     <mat-card-content>
-      <img alt="Portada {{ book.title }}" [src]="book.thumbnail | secureUrl" />
+      <img
+        width="110px"
+        height="153px"
+        alt="Portada {{ book.title }}"
+        [src]="book.thumbnail | secureUrl"
+      />
     </mat-card-content>
   </mat-card>
 </div>

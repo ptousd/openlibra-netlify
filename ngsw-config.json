@@ -36,10 +36,10 @@
       "name": "openlibra-api",
       "urls": ["https://www.etnassoft.com/api/v1/**"],
       "cacheConfig": {
-        "maxSize": 50,
+        "maxSize": 100,
         "maxAge": "1h",
-        "timeout": "3s",
-        "strategy": "performance"
+        "timeout": "5s",
+        "strategy": "freshness"
       }
     }
   ]
